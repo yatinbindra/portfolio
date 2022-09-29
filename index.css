@@ -1,0 +1,329 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ 
+}
+
+.header {
+  overflow: hidden;
+  background-color: #e9effc;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: rgb(2, 2, 134);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: rgb(143, 179, 226);
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(2, 2, 134);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+/*footer*/
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background:  #e9effc;
+position: relative;
+}
+
+.copyright-area{
+background: #e9effc;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #7a7979;
+}
+.copyright-text p a{
+color: rgb(2, 2, 134);
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: rgb(2, 2, 134);
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+
+  width: 1000px;
+  height: 100px;
+}
+.slide{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.slideshow-container text{
+  position:relative;
+  z-index: 1;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.Content{
+  margin-top: 40px;
+  padding: 30px 30px;
+  background-color: antiquewhite;
+  background-image: url("img7.jpg");
+}
+
+.card {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  border:4px #000;
+  max-width: 400px;
+  margin : auto;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0 4px 8px 0 rgba(36, 36, 36, 0.2);  
+
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.flip-box {
+  background-color: transparent;
+  
+  height: 300px;
+  margin:40px 80px 40px 80px;
+  perspective: 900px;
+}
+
+.flip-box-inner {
+  
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+.image1{
+  height: 100%;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:white;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: rgb(3, 90, 177);
+  color: white;
+  border-radius: 20px;
+  transform: rotateX(180deg);
+}
+.heading1{
+  font-size: 42px;
+  font-weight: 550;
+  margin-top: 50px;
+  text-align: center;
+}
+.heading2{
+  font-size: 23px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.cont1{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(2, 2, 134);
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.vloging{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(2, 2, 134);
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.wrapper {
+  height: 30vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 100ch;
+
+  animation: typing 3s steps(100), blink .5s step-end infinite alternate;
+  white-space: pre;
+ 
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+.video-container {
+
+  width: 1000px;
+  height: 1000px;
+ 
+}
+
+.video-container video {
+width: 100%;
+height: 50%;
+position: absolute;
+object-fit: cover;
+z-index: 0;
+}
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 10px;
+}
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
